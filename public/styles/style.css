@@ -1,0 +1,261 @@
+
+#navbar{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+.kosara{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 5px;
+}
+.kosara{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cart_amount{
+    position: absolute;
+    top: 0px;
+    right:60px;
+    font-size: 1rem;
+    background-color: orange;
+    padding: 3px;
+    border-radius: 5px;
+}
+.home{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.search{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.pozdravni_tekst_bar{
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.pozdravni_tekst{
+    position:absolute;
+    top: 50px;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4, 210px);
+    gap: 30px;
+    padding: 10px;
+    width: 800;
+    
+}
+@media all and (max-width:1150px){
+    .main{
+        grid-template-columns: repeat(3, 210px);
+        gap: 30px;
+        padding: 10px;
+        width: 800;
+    }
+}
+
+@media all and (max-width:1024px){
+    .main{
+        display: grid;
+        grid-template-columns: repeat(2, 210px);
+        gap: 30px;
+        padding: 10px;
+        width: 800;
+    }
+    #navbar{
+        grid-template-columns: auto auto;
+    }
+    .home_a{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .wrapper_main{
+        grid: auto auto ;
+    }
+    .aside_wrapper{
+        grid-column-start: 1;
+        grid-row-start: 2 !important;
+        grid-row-end: 4 !important;
+
+    }
+    .pozdravni_tekst_bar{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .wrapper_unutra{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+}
+button {
+    width: 150px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+  }
+.aside{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+
+.item{
+    border: 2px solid;
+    border-color: black;
+    padding: 2px;
+    position: relative;
+}
+.item_slika{
+    display: flex;
+    position: relative;
+}
+
+.item_amount{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    font-size: 1.5rem;
+    background-color: orange;
+    padding: 3px;
+    border-radius: 5px;
+    display: block;
+}
+
+
+.wrapper_main{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+.shopping_bag{
+    display: none;
+    position: absolute;
+    top: 125px;
+    right: 75px;
+    color: white;
+    background-color: rgba(128,128,128, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item:hover .shopping_bag{
+    display: inline-block;
+}
+#slika_kosara{
+    cursor: pointer;
+}
+#slika_home{
+    cursor: pointer;
+}
+#slika_search{
+    cursor: pointer;
+}
+.naziv_kolicina{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    width: 500px;
+}
+.shopping_cart{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 30px;
+    padding-top: 100px;
+
+}
+.cart_items{
+    display:flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    gap:20px;
+}
+.buttons_amount{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.item_amount_cart{
+    font-size: 2rem;
+    align-items: center;
+    font-weight: 700;
+}
+.minus{
+    width: 20px;
+    height:20px;
+    cursor:pointer;
+
+}
+.plus{
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+
+}
+.cart_item{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.item_name{
+    justify-content: start;
+    align-items: center;
+}
+
+.wrapper_unutra{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 100%;
+}
+.aside_wrapper{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+    align-items: center;
+    margin-left: 5px;
+}
+
